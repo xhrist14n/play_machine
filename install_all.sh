@@ -22,6 +22,7 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89
 sudo apt-get update
 sudo apt-get install sbt -y
 sudo apt-get install zip -y
+sudo apt-get install toilet figlet -y
 cd 
 wget https://example.lightbend.com/v1/download/play-java-starter-example -O starter.zip 
 unzip starter.zip
