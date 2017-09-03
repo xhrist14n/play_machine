@@ -12,15 +12,16 @@ sudo apt-get install ant -y
 sudo apt-get install python-pip -y
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
-sudo apt-get install oracle-java8-installer
-sudo apt-get install oracle-java9-installer
+sudo apt-get install oracle-java8-installer -y
+sudo apt-get install oracle-java9-installer -y
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
 echo "Installation of sbt for play framework ... "
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 sudo apt-get update
-sudo apt-get install sbt
+sudo apt-get install sbt -y
+sudo apt-get install zip -y
 cd 
 wget https://example.lightbend.com/v1/download/play-java-starter-example -O starter.zip 
 unzip starter.zip
